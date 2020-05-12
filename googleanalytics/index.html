@@ -22,6 +22,13 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+        
+            <script>
+            function exampleTracking() {                
+                ga('send', 'event', 'Prototype', 'Try', 'Main');
+                window.alert("Tracking Event...");
+            }
+            </script>
 
 		<!-- Header -->
 			<header id="header">
@@ -30,7 +37,7 @@
 					<p>Just a simple, single page responsive<br />
 					template brought to you by <a href="http://html5up.net">HTML5 UP</a></p>
 					<ul class="actions">
-						<li><a href="#" class="button primary icon solid fa-play" onclick="ga('send', 'event', 'Prototype', 'Try', 'Main');">Try it!</a></li>
+						<li><a href="#" class="button primary icon solid fa-play" onclick="exampleTracking();">Try it!</a></li>
 						<li><a href="#one" class="button icon solid fa-chevron-down scrolly">Learn More</a></li>
 					</ul>
 				</div>
