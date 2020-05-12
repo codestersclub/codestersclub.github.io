@@ -2019,7 +2019,9 @@ input, select, textarea {
 		outline: 0;
 		padding: 0 1em;
 		text-decoration: none;
-		width: 100%;
+		width: 50%;
+        margin: auto;
+        
 	}
 
 		input[type="text"]:invalid,
@@ -3144,6 +3146,7 @@ input, select, textarea {
 			.wrapper.style2 input[type="submit"],
 			.wrapper.style2 input[type="reset"],
 			.wrapper.style2 input[type="button"],
+            .wrapper.style2 input[type="email"],
 			.wrapper.style2 button,
 			.wrapper.style2 .button {
 				background-color: transparent;
@@ -3203,7 +3206,7 @@ input, select, textarea {
 			.wrapper.style2 select,
 			.wrapper.style2 textarea {
 				color: inherit;
-				background-color: rgba(144, 144, 144, 0.075);
+/*				background-color: rgba(144, 144, 144, 0.075);*/
 				border-color: #e6e6e6;
 			}
 
