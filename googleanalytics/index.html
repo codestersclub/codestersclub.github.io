@@ -6,6 +6,15 @@
 -->
 <html>
 	<head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165398865-2"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-165398865-2');
+        </script>
+        
 		<title>Fractal by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -21,7 +30,7 @@
 					<p>Just a simple, single page responsive<br />
 					template brought to you by <a href="http://html5up.net">HTML5 UP</a></p>
 					<ul class="actions">
-						<li><a href="#" class="button primary icon solid fa-download">Download</a></li>
+						<li><a href="#" class="button primary icon solid fa-play" onclick="ga('send', 'event', 'Prototype', 'Try', 'Main');">Try it!</a></li>
 						<li><a href="#one" class="button icon solid fa-chevron-down scrolly">Learn More</a></li>
 					</ul>
 				</div>
