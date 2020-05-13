@@ -5,7 +5,16 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>        
+	<head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166262488-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-166262488-1');
+        </script>
+
 		<title>Fractal by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -13,6 +22,23 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
+        <script>
+        function onButtonTryIt() {
+            console.log("Try it button pressed!");
+            gtag('event', 'Try it');
+        }
+            
+        function onButtonSubscribe() {
+            console.log("Subscribe button pressed!");
+            gtag('event', 'Subscribe');
+        }
+            
+        function onButtonFacebook() {
+            console.log("Facebook button pressed!");
+            gtag('event', 'Facebook');
+        }        
+        </script>
+        
 		<!-- Header -->
 			<header id="header">
 				<div class="content">
@@ -20,7 +46,7 @@
 					<p>Just a simple, product<br />
 					by <a href="https://www.codesters.club/">codesters.club</a> &amp; <a href="http://html5up.net">HTML5 UP</a></p>
 					<ul class="actions">
-						<li><a href="#four" class="button primary icon solid fa-play">Try it!</a></li>
+						<li><a href="#four" class="button primary icon solid fa-play" onclick="onButtonTryIt();">Try it!</a></li>
 						<li><a href="#two" class="button icon solid fa-chevron-down scrolly">Learn More</a></li>
 					</ul>
 				</div>
@@ -65,7 +91,7 @@
                             <br>
                             <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                             <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ba2174ebf7549b078b54a7161_34ba0008ac" tabindex="-1" value=""></div>
-                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button primary"></div>
+                            <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button primary" onclick="onButtonSubscribe();"></div>
                         </div>
                     </form>
                 </div>
@@ -79,7 +105,7 @@
 		<!-- Footer -->
 			<footer id="footer">
 				<ul class="icons">
-					<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon brands fa-facebook-f" onclick="onButtonFacebook();"><span class="label">Facebook</span></a></li>
 					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 				</ul>
